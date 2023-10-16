@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GITGRAM</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>src="https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854"</script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="particles-js">
+  </div>
+    <span style="font-family: Sofia, sans-serif;
+    text-shadow: 3px 3px 3px #00105b;
+    display: flex;
+    font-size: 4em;
+    margin-block-start: 0.67em;
+    font-weight: bold;
+    justify-content: center; background-color: #00105b; border-radius: 30px;">Github Profile Viewer</span>
+    <form id="form">
+        <input type="text" id="search" placeholder="Enter a GitHub username">
+        <button type="submit">Search</button>
+      </form>
+    <div class="box">
+        <div>
+            <img class="avatar" src="" alt="" />
+          </div>
+    </div>
+    <div class="box" style="height: auto;">
+        <button id="show-history" >Search History</button><br>
+  <div class="card" id="search-history-card" style= "float: inline-start; display: none; margin-top: 40px;">
+    <div>
+      <label for="filter">Filter:</label>
+      <select id="filter"style="background-color: black;">
+        <option value="newest" style="background-color:black;">Newest</option>
+        <option value="oldest" style="background-color:black;">Oldest</option>
+        <option value="mostPopular" style="background-color:black;">Most Popular</option>
+      </select>
+    </div>
+    
+    <!-- <h2>Search History</h2> -->
+    <ul id="history-list"></ul>
+  </div>
+    </div>
+</body>
+<script src="scripts.js"></script>
+</html>
